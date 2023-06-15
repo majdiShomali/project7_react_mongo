@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo1 from "../Images/vegetables/Lemon.png";
+import Logo1 from "../Images/animal-charity-logo-1.png";
 import { useState } from 'react';
-import imageSign from "../Images/Signin0.png"
+import imageSign from "../Images/Dog_MagnifyingGlass.jpg"
 import jwt from 'jwt-decode' // import dependency
 import axios from 'axios';
 
@@ -65,39 +65,6 @@ export default function Signup() {
   } catch (error) {
     console.error("Error inserting data:", error);
   }
-
-  // axios
-  // .post("http://localhost:4000/records", {
-  //   name: name,
-  //   phone: phone,
-  //   email: email,
-  //   password: password,
-  // })
-  // .then(function (response) {
-  //   if (response.data != "taken") {
-  //     console.log(response.data);
-
-  //     axios
-  //     .post("http://localhost:4000/records0", {
-  //       vegetables: [],
-  //       userid:response.data[0].userid
-       
-  //     })
-  //     .then(function (response) {
-    
-  //     })
-  //     .catch(function (error) {});
-    
-
-  //     window.location.href = "http://localhost:3000/LogIn";
-  //   } else {
-  //     console.log(response.data);
-  //     alert("This Email is already taken");
-  //     // setError("This Email is already taken");
-  //   }
-  // })
-  // .catch(function (error) {});
-
 
 
 

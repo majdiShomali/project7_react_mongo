@@ -78,7 +78,7 @@ export default function App() {
 
   useEffect(() => {
     if (localStorage.auth != null) {
-      // fetchProtectedData()
+      fetchProtectedData()
     }
   }, []);
 
