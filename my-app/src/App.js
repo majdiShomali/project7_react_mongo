@@ -17,13 +17,13 @@ import LogIn from "./pages/Login";
 // import Kitchens from "./pages/Kitchens";
 
 
-// import Sidebar from "./pages/dashboard/Sidebar";
-// import NavListMenuD from "./pages/dashboard/NavDashboard";
-// import MainDashboard from "./pages/dashboard/MainDashboard";
+import Sidebar from "./pages/dashboard/Sidebar";
+import NavListMenuD from "./pages/dashboard/NavDashboard";
+import MainDashboard from "./pages/dashboard/MainDashboard";
 // import UserProfile from "./pages/UserProfile";
-// import UserInfo from "./components/dashboard/UserInfo"
-// import ApproveTable from "./components/dashboard/ApproveTable";
-// import AdminInfo from "./components/dashboard/AdminInfo";
+import UserInfo from "./components/dashboard/UserInfo"
+import ApproveTable from "./components/dashboard/ApproveTable";
+import AdminInfo from "./components/dashboard/AdminInfo";
 
 
 import axios from "axios";
@@ -106,15 +106,15 @@ export default function App() {
   const AppRouter2 = () => {
     return (
       <Router>
-        {/* <Sidebar /> */}
+        <Sidebar />
         <div style={{ width: "100%" }}>
-          {/* <NavListMenuD /> */}
+          <NavListMenuD />
           <Routes>
-            {/* <Route index element={<MainDashboard />} />
+            <Route index element={<MainDashboard />} />
             <Route path="ListUser" element={<UserInfo />} />
-            <Route path="UserProfile" element={<UserProfile />} />
+            {/* <Route path="UserProfile" element={<UserProfile />} /> */}
             <Route path="ListRestaurant" element={<ApproveTable />} />
-            <Route path="ListAdmin" element={<AdminInfo />} /> */}
+            <Route path="ListAdmin" element={<AdminInfo />} />
           </Routes>
         </div>
       </Router>
